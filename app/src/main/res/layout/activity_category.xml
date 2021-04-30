@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CategoryActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/back"
+            app:tint="@color/purpleColor" />
+
+
+        <TextView
+            android:id="@+id/txt_catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="@font/zs_semibold"
+            android:text="Gifts For Her"
+            android:textColor="@color/purpleColor"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_noProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/zs_semibold"
+        android:gravity="center"
+        android:text="No Product Available"
+        android:textColor="@color/purpleColor"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subCategoryRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl"
+        android:layout_below="@id/rel"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:gravity="center"
+            android:id="@+id/rl_previous"
+            android:background="@drawable/select_border"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/iv_pre"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/previous"
+               />
+            <TextView
+                android:id="@+id/txt_pre"
+                android:layout_toRightOf="@+id/iv_pre"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zs_semibold"
+                android:text="Previous"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:gravity="center"
+            android:id="@+id/rl_next"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_border"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_toRightOf="@+id/txt_next"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/next"
+                app:tint="@color/white" />
+            <TextView
+                android:id="@+id/txt_next"
+
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zs_semibold"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progressbar"
+        android:visibility="gone"></ProgressBar>
+
+</RelativeLayout>

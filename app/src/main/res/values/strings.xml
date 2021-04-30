@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Flower Express</string>
+    <string name="product">Product</string>
+    <string name="collaborations">Whole Sale</string>
+    <string name="occasion">Shop by Occasion</string>
+    <string name="viewall">View All</string>
+    <string name="subscription">Subscription</string>
+    <string name="what_s_new">What\'s New?</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account? Signup</string>
+    <string name="search">Search</string>
+    <string name="shop_by">Shop By Type</string>
+    <string name="deliver_to">Deliver to</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="welcome">Welcome</string>
+    <string name="cart">Cart</string>
+    <string name="delivery">Delivery</string>
+    <string name="place_order">Place order</string>
+    <string name="select_date">Select date</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="today">Today</string>
+    <string name="title_activity_select_by_type">SelectByTypeActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+</resources>

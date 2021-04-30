@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imageDesigner"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/flower2" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/zs_light"
+                android:text="Flower"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/title"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_kwd"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/zs_regular"
+                    android:text="KWD"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_variMin"
+                    android:layout_toRightOf="@+id/txt_kwd"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/zs_regular"
+                    android:text="2.75"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_toRightOf="@+id/txt_variMin"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_sym"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/zs_regular"
+                    android:text="-"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/txt_sym"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/zs_regular"
+                    android:text="6.5"
+                    android:id="@+id/txt_variationMax"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

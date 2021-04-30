@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im6"
+    tools:context=".Activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zs_semibold"
+            android:text="Welcome back"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:fontFamily="@font/zs_regular"
+            android:text="Login into your account"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="5dp"
+
+            android:background="@drawable/main_back"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zs_semibold"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/et_boundary">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/email"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/img2"
+                    android:background="@null"
+                    android:fontFamily="@font/zs_regular"
+                    android:hint="Email"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_boundary">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/lock"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/img3"
+                    android:background="@null"
+                    android:fontFamily="@font/zs_regular"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/zs_regular"
+                android:text="Forgot password?"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                android:fontFamily="@font/zs_semibold"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/purpleColor"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/zs_semibold"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/white" />
+
+</RelativeLayout>

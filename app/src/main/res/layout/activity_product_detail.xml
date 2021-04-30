@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProductDetailActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/bottom_radius"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/zs_semibold"
+                    android:text="AH Bridal Bundle"
+                    android:id="@+id/txt_name"
+                    android:textColor="@color/purpleColor"
+                    android:textSize="20dp" />
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/purpleColor"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/logo"
+                        android:padding="10dp"
+                        app:tint="@color/white" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/delivery_car" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/img"
+                        android:fontFamily="@font/zs_medium"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Free Delievery"
+                        android:textColor="#FC6537"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/zs_regular"
+                    android:lineSpacingExtra="3dp"
+                    android:id="@+id/txt_description"
+                    android:text="Each Red White &amp; Bloom floral arrangement will be a natural, original work of art. The company is committed to making each arrangement unique and custom-designed based on each customer’s needs. Red White &amp; Bloom’s floral arrangements will feature a wide range of seasonal flowers. All sample arrangements in the store will be available for purchase."
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/fpot" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="false"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorMargin="20dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="1dp"
+                app:sliderIndicatorSelectedColor="@color/purpleColor"
+                app:sliderIndicatorUnselectedColor="@color/light_grey"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true"
+                />
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/circle"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/purpleColor" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/heart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/circle"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_heart"
+                    app:tint="@color/purpleColor" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@id/heart"
+                android:background="@drawable/circle"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/export"
+                    app:tint="@color/purpleColor" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/zs_semibold"
+                android:paddingStart="15dp"
+                android:text="BHD"
+                android:id="@+id/txt_price"
+                android:textColor="@color/purpleColor"
+                android:textSize="20sp"
+                tools:ignore="RtlSymmetry" />
+
+
+            <Button
+                android:id="@+id/btnAddtoCart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="@color/purpleColor"
+                android:fontFamily="@font/zs_medium"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:cornerRadius="30dp"
+                app:rippleColor="@color/white"
+                app:icon="@drawable/bicycleg"
+                app:iconSize="35dp"
+                app:iconTint="@color/white" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

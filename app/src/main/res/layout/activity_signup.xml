@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im6"
+    android:orientation="vertical"
+    tools:context=".Activities.SignupActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zs_semibold"
+            android:text="@string/welcome"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:fontFamily="@font/zs_regular"
+            android:text="Signup to create your account"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/main_back"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/zs_semibold"
+                android:text="Sign up"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/et_boundary">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/muser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/img1"
+                    android:background="@null"
+                    android:fontFamily="@font/zs_regular"
+                    android:hint="Username"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_boundary">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/email"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/img2"
+                    android:background="@null"
+                    android:fontFamily="@font/zs_regular"
+                    android:hint="Email"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_boundary">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/phone"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/img4"
+                    android:background="@null"
+                    android:fontFamily="@font/zs_regular"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_boundary">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/lock"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/img3"
+                    android:background="@null"
+                    android:fontFamily="@font/zs_regular"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                android:fontFamily="@font/zs_semibold"
+                android:text="Signup"
+                android:textAllCaps="false"
+                android:textColor="@color/purpleColor"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/rel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="-60dp"
+        android:elevation="4dp"
+        app:shape_roundRect_bottomLeftRadius="300dp"
+        app:shape_roundRect_bottomRightRadius="300dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_topRightRadius="300dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D5D5D5">
+
+
+            <ImageView
+                android:id="@+id/imagePrf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pfr" />
+
+
+        </RelativeLayout>
+
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/zs_semibold"
+        android:padding="15dp"
+        android:text="Already have an account? Login"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
